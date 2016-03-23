@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebhookHostTest", "WebhookHostTest\WebhookHostTest.csproj", "{597212A6-6A52-4D3C-9469-71F3E721BC68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediaspike.Webhooks.Receivers.EasyPost", "Mediaspike.Webhooks.Receivers.EasyPost\Mediaspike.Webhooks.Receivers.EasyPost.csproj", "{3D84F602-2698-4AD5-A4FE-DE8CD3542B2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{597212A6-6A52-4D3C-9469-71F3E721BC68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597212A6-6A52-4D3C-9469-71F3E721BC68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597212A6-6A52-4D3C-9469-71F3E721BC68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597212A6-6A52-4D3C-9469-71F3E721BC68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D84F602-2698-4AD5-A4FE-DE8CD3542B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D84F602-2698-4AD5-A4FE-DE8CD3542B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D84F602-2698-4AD5-A4FE-DE8CD3542B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D84F602-2698-4AD5-A4FE-DE8CD3542B2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
