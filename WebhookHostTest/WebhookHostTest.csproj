@@ -137,7 +137,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\TrackingController.cs" />
+    <Compile Include="Controllers\TrackingController.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Webhooks\EasypostWebhookHandler.cs" />
     <Compile Include="Webhooks\GenericJsonWebHookHandler.cs" />
@@ -162,7 +162,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

@@ -13,11 +13,11 @@ namespace System.Web.Http
     public static class HttpConfigurationExtensions
     {
         /// <summary>
-        /// Initializes support for receiving GitHub WebHooks.
-        /// Set the '<c>MS_WebHookReceiverSecret_GitHub</c>' application setting to the application secrets, optionally using IDs
+        /// Initializes support for receiving EasyPost WebHooks.
+        /// Set the '<c>MS_WebHookReceiverSecret_EasyPost</c>' application setting to the application secrets, optionally using IDs
         /// to differentiate between multiple WebHooks, for example '<c>secret0, id1=secret1, id2=secret2</c>'.
-        /// The corresponding WebHook URI is of the form '<c>https://&lt;host&gt;/api/webhooks/incoming/github/{id}</c>'.
-        /// For details about GitHub WebHooks, see <c>https://developer.github.com/webhooks/</c>.
+        /// The corresponding WebHook URI is of the form '<c>https://&lt;host&gt;/api/webhooks/incoming/easypost/{id}</c>'.
+        /// For details about EasyPost WebHooks, see <c>https://www.easypost.com/account#/webhooks/</c>.
         /// </summary>
         /// <param name="config">The current <see cref="HttpConfiguration"/>config.</param>
         public static void InitializeReceiveEasyPostWebHooks(this HttpConfiguration config)

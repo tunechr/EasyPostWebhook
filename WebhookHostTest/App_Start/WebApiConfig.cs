@@ -10,9 +10,11 @@ namespace WebhookHostTest
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            // Attribute routing.
+            config.MapHttpAttributeRoutes();
 
             // Web API routes
-            config.MapHttpAttributeRoutes();
+            //config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

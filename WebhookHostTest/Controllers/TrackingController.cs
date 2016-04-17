@@ -32,7 +32,32 @@ namespace WebhookHostTest.App_Start
 
         }
 
+        [Route("api/Shipping")]
+        [HttpGet]
+        public string testShipment()
+        {
+            Dictionary<string, object> parameters, toAddress, fromAddress;
 
+
+            toAddress = new Dictionary<string, object>() {
+                {"company", "Simpler Postage Inc"}, {"street1", "164 Townsend Street"}, {"street2", "Unit 1"},
+                {"city", "San Francisco"}, {"state", "CA"}, {"country", "US"}, {"zip", "94107"},
+            };
+            fromAddress = new Dictionary<string, object>() {
+                {"name", "Andrew Tribone"}, {"street1", "480 Fell St"}, {"street2", "#3"},
+                {"city", "San Francisco"}, {"state", "CA"}, {"country", "US"}, {"zip", "94102"}
+            };
+            parameters = new Dictionary<string, object>() {
+                {"parcel", new Dictionary<string, object>() {{"length", 8}, {"width", 6}, {"height", 5}, {"weight", 10}}},
+                {"to_address", toAddress}, {"from_address", fromAddress}, {"reference", "ShipmentRef"}
+            };
+                        
+            Shipment shipment = Shipment.Create(parameters);
+            
+            Shipment retrieved = Shipment.Retrieve(shipment.id);
+
+            return "";
+        }
 
         // GET: api/Tracking/5
         public string Get(int id)
