@@ -21,6 +21,8 @@ namespace WebhookHostTest
             );
 
             config.InitializeReceiveGenericJsonWebHooks();
+
+            //This is the registration of the EasyPost Webhook. 
             config.InitializeReceiveEasyPostWebHooks();
         }
     }

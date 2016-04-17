@@ -139,7 +139,8 @@
   <ItemGroup>
     <Compile Include="App_Start\TrackingController.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="GenericJsonWebHookHandler.cs" />
+    <Compile Include="Webhooks\EasypostWebhookHandler.cs" />
+    <Compile Include="Webhooks\GenericJsonWebHookHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

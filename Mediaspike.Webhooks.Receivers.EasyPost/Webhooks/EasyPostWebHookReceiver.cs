@@ -69,7 +69,8 @@ namespace Microsoft.AspNet.WebHooks
 
             if (request.Method == HttpMethod.Post)
             {
-                await VerifySignature(id, request);
+                //todo implement signiture verification
+                //await VerifySignature(id, request);
 
                 // Read the request entity body.
                 JObject data = await ReadAsJsonAsync(request);
